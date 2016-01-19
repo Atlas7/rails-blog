@@ -1,14 +1,24 @@
-<h1>Show article</h1>
+<h1>Show Article</h3>
 
 <p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
- 
-<p>
-  <strong>Text:</strong>
-  <%= @article.text %>
+	<strong>Title:</strong>
+	<%= @article.title %>
 </p>
 
-<%= link_to 'Edit', edit_article_path(@article) %> |
+<p>
+	<strong>Text:</strong>
+	<%= @article.text %>
+</p>
+
+<%= link_to 'Edit Article', edit_article_path(@article) %> |
 <%= link_to 'Back', articles_path %>
+
+<hr/>
+
+<h2>Add a comment:</h2>
+<%= render 'comments/form' %>
+
+<hr/>
+
+<h2>Comments</h2>
+<%= render @article.comments %>
