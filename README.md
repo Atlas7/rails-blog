@@ -19,7 +19,7 @@ My development environment that works:
 Git clone this repository
 
 ```
-https://github.com/Atlas7/rails-blog
+git clone https://github.com/Atlas7/rails-blog
 ```
 
 Navigate to the repository.
