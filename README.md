@@ -9,8 +9,9 @@ It illustrates:
 
 # Pre-requisites
 
-My development environment that works:
+My development environment:
 
+- MacBookPro (OSX 10.11.x El Capitian, 64-bit, 16GB RAM, 2.8 GHz Intel Core i7)
 - ruby 2.2.3p173 (2015-08-18 revision 51636) [x86_64-darwin15]
 - Rails 4.2.4
 
