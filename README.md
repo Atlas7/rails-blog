@@ -29,6 +29,12 @@ Navigate to the repository.
 cd rails-blog
 ```
 
+Setup SQLite3 databases
+
+```
+bin/rake db:migrate
+```
+
 Start a local web server.
 
 ```
@@ -36,6 +42,12 @@ bin/rails server
 ```
 
 Navigate to [http://localhost:3000/](http://localhost:3000/).
+
+# Basic HTTP Authentication
+
+Basic HTTP Authentication has been added to the controller files `comments_controller.rb` and `articles_controller.rb`, under `app/controllers`.
+
+For scenario like edit/delete articles/comments, the browser may ask you for a username and password. The default username and password is `god` and `apple` respectively. This type of basic authentication is only used here for illustration sake. For production mode a more sophisicated approach should be used - this is out of the scope of this repository / exercise.
 
 # What next
 
