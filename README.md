@@ -17,6 +17,8 @@ My development environment:
 
 # Instruction
 
+Open a terminal on your machine.
+
 Git clone this repository
 
 ```
@@ -42,6 +44,8 @@ bin/rails server
 ```
 
 Navigate to [http://localhost:3000/](http://localhost:3000/).
+
+Kill the web server by hitting `Ctrl` + `c`.
 
 # Basic HTTP Authentication
 
