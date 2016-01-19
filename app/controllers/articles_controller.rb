@@ -16,7 +16,7 @@ welcome_index GET    /welcome/index(.:format)     welcome#index
 # Use instance variable (prefix with an "@" to parse value to HTML template "view")
 class ArticlesController < ApplicationController
 
-	# GET - List all articles
+	# GET - List all articles - this is article_path
 	def index
 		@articles = Article.all
 	end
@@ -59,6 +59,10 @@ class ArticlesController < ApplicationController
 	end
 
 	def destroy
+		@article = Article.find(params[:id])
+		@article.destroy
+
+		redirect_to articles_path
 	end
 
 	# hid these variables from direct instance access.
