@@ -16,6 +16,9 @@ welcome_index GET    /welcome/index(.:format)     welcome#index
 # Use instance variable (prefix with an "@" to parse value to HTML template "view")
 class ArticlesController < ApplicationController
 
+	# Basic HTTP Authentication
+	http_basic_authenticate_with name: "god", password: "apple", except: [:index, :show]
+
 	# GET - List all articles - this is article_path
 	def index
 		@articles = Article.all
